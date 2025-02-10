@@ -52,7 +52,6 @@ private:
 	const uint16_t CheckSignalTwo =   80;  /**<                     """" */
 	const uint16_t CheckSignalThree = 40;  /**<                     """" */
 	// read data
-	uint32_t _GPIO_WaitTimeout = 10000;    /**< uS Timeout for GPIO to wait for sensor response , 
-											min  > 50uS user defined to prevent comms lockup.*/
-	const uint16_t ReadSignal  = 35;       /**< uS 26-28 is low, 70uS hight : so set this 30<->68 uS  */
+	uint32_t _GPIO_WaitTimeout = 10000;    /**< uS Timeout for GPIO to wait for sensor response, min  > 50uS, user defined to prevent comms lockup.*/
+	const uint16_t ReadSignal  = 35;       /**< uS 26-28 is low, 70uS high : so set this 30<->68 uS  */
 };
